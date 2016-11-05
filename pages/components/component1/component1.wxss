@@ -1,0 +1,36 @@
+.userinfo {
+  width:100%;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: #f66;*/
+  /*position: absolute*/
+}
+.user{
+  width:180rpx;
+  background-color: #000;
+}
+.user text{
+  color:white;
+  display: block
+}
+/*.userinfo text{
+  display: block
+}*/
+.userinfo-avatar {
+  width: 96rpx;
+  height: 96rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.user-motto{
+  display: block;
+  margin-bottom: 80px;
+  text-align: center
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.hidden-icon{
+  position: absolute
+}

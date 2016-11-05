@@ -11,5 +11,13 @@
     密码：
     <input type="text" bindinput="userPasswordInput" password="true"/>
     <button bindtap="logIn">登录</button>
+    <!--<button bindtap="shuaxin">重定向</button>-->
+    <button bindtap="boo">{{boo}}</button>
+  </view>
+  <view>
+  <template name="body">
+    <text>{{responseData}}</text>
+   </template> 
+   <text>{{responseData}}</text>
   </view>
 </view>

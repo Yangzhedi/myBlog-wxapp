@@ -27,7 +27,7 @@
       "pagePath": "pages/components/component1/component1",
       "iconPath": "image/component.png",
       "selectedIconPath": "image/componentHL.png",
-      "text": "组件1"
+      "text": "test"
     }, {
       "pagePath": "pages/components/component2/component2",
       "iconPath": "image/component.png",

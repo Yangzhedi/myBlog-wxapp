@@ -1,31 +1,38 @@
-var order = ['red', 'yellow', 'green', 'blue', 'red']
+var app = getApp()
 Page({
   data: {
-    toView: "red",
-    scrollTop: 100
+    iconSize: [30],
+    iconColor: ['green'],
+    iconType: ['search'],
+    motto: '欢迎登录WXapp',
+    userInfo: {},
+    hide:true
   },
-  upper: function(e) {
-    console.log(e)
-  },
-  lower: function(e) {
-    console.log(e)
-  },
-  scroll: function(e) {
-    console.log(e)
-  },
-  tap: function(e) {
-    for (var i = 0; i < order.length; ++i) {
-      if (order[i] === this.data.toView) {
-        this.setData({
-          toView: order[i + 1]
-        })
-        break
+  onLoad: function () {
+    console.log('onLoad')
+    var that = this
+    //调用应用实例的方法获取全局数据
+    
+    wx.login({
+      success:function(res){
+        if(res.code){
+          console.log(res)
+        }else{
+          console.log("获取用户登录态失败！" + res.errMsg);
+        }
       }
-    }
+    });  
+    app.getUserInfo(function(res){
+      //更新数据
+      that.setData({
+        userInfo:res
+      })
+      console.log(res)
+    })
   },
-  tapMove: function(e) {
+  hideOrShow:function(){
     this.setData({
-      scrollTop: this.data.scrollTop + 10
+      hide:!this.data.hide
     })
   }
 })
