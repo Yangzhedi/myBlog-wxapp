@@ -1,0 +1,29 @@
+.swiper-item{
+    display: block;
+    height: 150px;
+}
+.page__hd{
+   padding: 50rpx 50rpx 50rpx 50rpx; 
+   text-align:left;
+}
+wx-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+wx-label {
+  display: block;
+  margin-top: 5px;
+}
+.picker-text {
+  margin-left: 10px;
+  position: relative;
+}
+.btn-area button{
+  display:inline-block;
+}
+.section_gap{
+  text-align: center;
+}
+.section_switch{
+  text-align: right
+}

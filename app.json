@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+
+    "pages/components/component1/component1",
+    "pages/components/component2/component2",
+    "pages/components/welcome/welcome"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/wechat.png",
+      "selectedIconPath": "image/wechatHL.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/components/component1/component1",
+      "iconPath": "image/component.png",
+      "selectedIconPath": "image/componentHL.png",
+      "text": "组件1"
+    }, {
+      "pagePath": "pages/components/component2/component2",
+      "iconPath": "image/component.png",
+      "selectedIconPath": "image/componentHL.png",
+      "text": "组件2"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "iconPath": "image/API.png",
+      "selectedIconPath": "image/APIHL.png",
+      "text": "logs"
+    }]
+  }
+}

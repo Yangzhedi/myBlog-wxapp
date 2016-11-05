@@ -1,0 +1,39 @@
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">国际关系学院</text>
+        <text class="page__desc">国际关系学院</text>
+    </view>
+    <view class="page__bd">
+        <view class="section section_gap swiper">
+            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for-items="{{imgUrls}}">
+                    <swiper-item>
+                        <!--<view class="swiper-item bc_{{item}}"></view>-->
+                         <image bindtap="bindViewTap" src="{{item}}" class="slide-image" width="355" height="150"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="btn-area">
+            <view class="body-view">
+                <mask hidden="{{hidden1}}" bindtap="mask1" hover-style="none"/>
+                <button type="default" bindtap="tap1">点击弹出默认mask</button>
+            </view>
+        </view>
+    </view>
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+		<view class="section section_gap section_switch ">
+            <view class="section__title">是否开启</view>
+            <switch name="switch"/>
+        </view>
+        <view class="section">
+            <view class="section__title">输入bla</view>
+            <input name="input" placeholder="please input here" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">Submit</button>
+            <button formType="reset">Reset</button>
+        </view>
+    </form>
+</view>
