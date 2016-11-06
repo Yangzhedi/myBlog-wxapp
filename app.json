@@ -1,10 +1,15 @@
 {
   "pages":[
+    "pages/components/component2/component2",
+    
     "pages/index/index",
     "pages/logs/logs",
 
     "pages/components/component1/component1",
-    "pages/components/component2/component2",
+    
+    
+    "pages/components/component2/search/search",
+    
     "pages/components/welcome/welcome"
   ],
   "window":{

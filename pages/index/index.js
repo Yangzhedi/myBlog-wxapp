@@ -80,7 +80,15 @@ Page({
     wx.redirectTo({
       url: '../index/index'
     })
-    console.log('1111111111111')
+  },
+  onReady:function(){
+    console.log('indx is on ready')
+  },
+  onHide:function(){
+    console.log('index is on hide')
+  },
+  onUnload:function(){
+    console.log('indx is on unload')
   },
   boo:function(){
     this.setData({

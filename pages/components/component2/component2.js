@@ -1,11 +1,11 @@
 Page({
     data: {
         imgUrls: [
-        '../../../image/API.png',
         'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
-        'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
         'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
-        'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
+        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
+        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg'
         ],
         indicatorDots: true,
         vertical: false,
@@ -44,7 +44,7 @@ Page({
       console.log('222')
     },
     tap1:function(e){
-      var obj = {}
+      let obj = {}
       obj['hidden1'] = false 
       this.setData(obj)
     },
@@ -68,7 +68,11 @@ Page({
       this.setData({
         chosen: ''
       })
-    
+    },
+    bindFocus:function(){
+        wx.navigateTo({
+        url: './search/search'
+      })
     }
 })
 

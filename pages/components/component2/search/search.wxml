@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="page">
+  <!--<view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>-->
+  <view class="nav-header"> 
+    <view class="search" bindtap="selectShowOrHide"> 
+        <!--<view class="search-select" hidden="{{selectHide}}">
+          <navigator>Content</navigator>
+          <navigator>Content</navigator>
+        </view>-->
+        <input class="search-input" placeholder="这是一个input" bindinput="bindInput" auto-focus />
+        <button  style="display:inline-block" bindtap="setSearchStorage">Content</button>
+    </view>
+  </view>
+  <view>
+  <template name="body">
+    <text>{{responseData}}</text>
+   </template> 
+   <text>{{responseData}}</text>
+  </view>
+</view>
