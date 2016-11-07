@@ -1,8 +1,9 @@
 <view class="page">
     <view class="nav-header"> 
         <mask hidden="{{hidden1}}" bindtap="mask1" hover-style="none"/>
-        <view class="shaoyishao"  bindtap="tap1"> 
-            扫一扫
+        <view class="saoyisao"  bindtap="tap1">
+            <!--<image src="../../../image/API.png" width="10" height="10"></image>-->
+            <view style="display:inline-block;">扫一扫</view>
         </view>
         <view class="search"> 
             <!--<icon type="search" size="20" color="purple" class="search-icon outside"/>-->
@@ -11,15 +12,11 @@
             </input>
         </view>
     </view>
-    <!--<view class="page__hd">
-        <text class="page__title">国际关系学院</text>
-        <text class="page__desc">国际关系学院</text>
-    </view>-->
     <view class="page__bd">
         <view class="section section_gap swiper">
-            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+            <swiper style="height:200px;" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
                     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-                <block wx:for-items="{{imgUrls}}">
+                <block wx:for-items="{{imgUrls}}" wx:key="idx">
                     <swiper-item>
                         <!--<view class="swiper-item bc_{{item}}"></view>-->
                          <image bindtap="bindViewTap" src="{{item}}" class="slide-image" width="355" height="150"/>
@@ -34,41 +31,5 @@
             </view>
         </view>
     </view>
-    <view class="page__bd">
-        <view class="section section_gap swiper">
-            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
-                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-                <block wx:for-items="{{imgUrls}}">
-                    <swiper-item>
-                        <!--<view class="swiper-item bc_{{item}}"></view>-->
-                         <image bindtap="bindViewTap" src="{{item}}" class="slide-image" width="355" height="150"/>
-                    </swiper-item>
-                </block>
-            </swiper>
-        </view>
-        <view class="btn-area">
-            <view class="body-view">
-                <mask hidden="{{hidden1}}" bindtap="mask1" hover-style="none"/>
-                <button type="default" bindtap="tap1">点击弹出默认mask</button>
-            </view>
-        </view>
-    </view><view class="page__bd">
-        <view class="section section_gap swiper">
-            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
-                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-                <block wx:for-items="{{imgUrls}}">
-                    <swiper-item>
-                        <!--<view class="swiper-item bc_{{item}}"></view>-->
-                         <image bindtap="bindViewTap" src="{{item}}" class="slide-image" width="355" height="150"/>
-                    </swiper-item>
-                </block>
-            </swiper>
-        </view>
-        <view class="btn-area">
-            <view class="body-view">
-                <mask hidden="{{hidden1}}" bindtap="mask1" hover-style="none"/>
-                <button type="default" bindtap="tap1">点击弹出默认mask</button>
-            </view>
-        </view>
-    </view>
+    
 </view>

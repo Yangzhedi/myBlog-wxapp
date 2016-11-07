@@ -38,11 +38,16 @@ wx-label {
 .page__bd{
   margin-top: 50px
 }
-.shaoyishao{
+.saoyisao{
   display: inline-block;
   background: pink;
-   height: 30px;
-   width:30px
+  height: 100rpx;
+  width:100rpx;
+  line-height:160rpx
+}
+.saoyisao image{
+  width: 60rpx;
+  height:60rpx
 }
 .search{
   display: inline-block;

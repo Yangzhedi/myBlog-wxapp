@@ -1,23 +1,27 @@
 <!--index.wxml-->
 <view class="page">
-  <!--<view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>-->
   <view class="nav-header"> 
-    <view class="search" bindtap="selectShowOrHide"> 
+    <view class="search"> 
         <!--<view class="search-select" hidden="{{selectHide}}">
           <navigator>Content</navigator>
           <navigator>Content</navigator>
         </view>-->
-        <input class="search-input" placeholder="这是一个input" bindinput="bindInput" auto-focus />
-        <button  style="display:inline-block" bindtap="setSearchStorage">Content</button>
+        <view>
+            <input class="search-input" placeholder="请输入搜索的商品" auto-focus
+            bindinput="bindInput"  bindchange="bindchange" value="{{inputValue}}"/>
+        </view>
+        <button class="clearInput" style="display:inline-block" bindtap="clearInput">×</button>
+        <button  style="display:inline-block" bindtap="setSearchStorage">搜索</button>
     </view>
   </view>
-  <view>
-  <template name="body">
-    <text>{{responseData}}</text>
-   </template> 
-   <text>{{responseData}}</text>
+  <view class="zong">
+    <view class="local" wx:for="{{getSearch}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx" >
+      <view wx:if="{{itemName != ''}}"> {{itemName}} </view>
+    </view>
+    <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+      <view> 没有标题没有蒙层没有确定的modal </view>
+      <view> 内容可以插入节点 </view> 
+    </modal>
+    <button style="display:inline-block" bindtap="clearSearchStorage">清空浏览记录</button>
   </view>
 </view>

@@ -9,7 +9,7 @@
     
     
     "pages/components/component2/search/search",
-    
+    "pages/components/component2/result/result",
     "pages/components/welcome/welcome"
   ],
   "window":{

@@ -1,11 +1,11 @@
 Page({
     data: {
         imgUrls: [
-        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
-        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
-        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
-        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg',
-        'http://www.uir.cn/upload/resources/image/2016/04/13/102287_1400x450.jpg'
+        '../../../image/hengping.png',
+        '../../../image/hengping.png',
+        '../../../image/hengping.png',
+        '../../../image/hengping.png',
+        '../../../image/hengping.png'
         ],
         indicatorDots: true,
         vertical: false,
@@ -52,9 +52,9 @@ Page({
       var obj = {}
       obj['hidden1'] = true 
       this.setData(obj)
-      wx.navigateTo({
-        url: '../component1/component1'
-      })
+    //   wx.navigateTo({
+    //     url: '../component1/component1'
+    //   })
     },
     formSubmit: function(e) {
       console.log('form发生了submit事件，携带数据为：', e.detail.value)

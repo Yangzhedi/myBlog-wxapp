@@ -14,25 +14,37 @@
    height: 30px;
    width:30px
 }
-.search{
+.search view{
   display: inline-block;
-  
 }
-.search input{
+.search .search-input{
   display: inline-block;
-  background-color:yellow;
+  background-color:#ff1;
   position:relative;
   height: 50rpx;
-  padding: 20rpx 30rpx 20rpx 60rpx;
+  padding: 20rpx 75rpx 20rpx 30rpx;
 }
 .search-input icon{
   position:absolute;
-left:5px;
-top:10px;
+  left:5px;
+  top:10px;
 }
 .outside{
   position: absolute
 }
 .search-select{
   display: inline-block
+}
+.local{
+  display: inline-block;
+  border: 1px red solid;
+  border-radius: 3px;
+  background-color: #eee;
+  margin-left: 10px;
+}
+.zong{
+    margin-top: 60px;
+}
+.clearInput{
+  left: -40px;
 }
